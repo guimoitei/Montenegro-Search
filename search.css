@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #202124;
+}
+
+/* Cabeçalho */
+.search-header {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.search-header .logo {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Caixa de pesquisa */
+#search-form {
+  display: flex;
+  justify-content: center;
+}
+
+#query {
+  width: 60%;
+  max-width: 600px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px 0 0 24px;
+  outline: none;
+}
+
+#search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #dfe1e5;
+  border-left: 0;
+  border-radius: 0 24px 24px 0;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* Container de resultados */
+.results-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Cada resultado */
+#results .card {
+  margin-bottom: 24px;
+}
+
+.result-title {
+  font-size: 18px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.result-title:hover {
+  text-decoration: underline;
+}
+
+.result-url {
+  font-size: 14px;
+  color: #006621;
+  margin-bottom: 5px;
+}
+
+.result-snippet {
+  font-size: 14px;
+  color: #545454;
+  line-height: 1.4;
+}

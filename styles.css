@@ -1,0 +1,122 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Tema claro */
+body.light {
+    background: #fff;
+    color: #202124;
+}
+
+/* Tema escuro */
+body.dark {
+    background: #121212;
+    color: #e8eaed;
+}
+
+/* Logo */
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4285F4;
+    margin-bottom: 15px;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Barra de pesquisa */
+#query {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+
+body.dark #query {
+    background: #303134;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+}
+
+/* Botão */
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #f8f9fa;
+    color: #3c4043;
+}
+
+.btn:hover {
+    background: #e8eaed;
+}
+
+body.dark .btn {
+    background: #5f6368;
+    color: #fff;
+}
+
+body.dark .btn:hover {
+    background: #70757a;
+}
+
+/* Resultados */
+#results {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.card {
+    padding: 15px;
+    border-bottom: 1px solid #dadce0;
+}
+
+body.dark .card {
+    border-color: #5f6368;
+}
+
+.card a {
+    color: #1a0dab;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+body.dark .card a {
+    color: #8ab4f8;
+}
+
+.card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: inherit;
+}
+
+/* Tema Switch */
+.theme-toggle {
+    margin-top: 30px;
+}

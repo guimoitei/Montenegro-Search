@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Montenegro! — Buscador</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Montenegro</div>
+<div class="subtitle">Pesquise sites e imagens com rapidez e facilidade</div>
+  </header>
+
+  <main class="main">
+    <div class="search-box">
+      <input id="query" type="search" placeholder="Digite sua pesquisa..." />
+      <div class="buttons">
+        <button id="btn-sites" class="btn primary">Pesquisar Sites</button>
+        <button id="btn-images" class="btn">Pesquisar Imagens</button>
+      </div>
+    </div>
+
+    <section id="results" class="results"></section>
+    <nav id="pagination" class="pagination"></nav>
+  </main>
+
+  <footer class="footer">
+    <small>Montenegro! — Your Computer Corpioration</small>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montenegro - Resultados</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+<script src="{{ url_for('static', filename='search.js') }}"></script>
+
+</head>
+<body>
+  <!-- Barra de pesquisa -->
+  <header class="search-header">
+    <div class="logo">Montenegro</div>
+    <form id="search-form">
+      <input type="text" id="query" name="q" placeholder="Pesquisar...">
+      <button type="submit">Pesquisar</button>
+    </form>
+  </header>
+
+  <!-- Resultados -->
+  <main class="results-container">
+    <div id="results">
+      Carregando resultados...
+    </div>
+  </main>
+</body>
+</html>
